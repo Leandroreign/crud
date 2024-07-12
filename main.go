@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/Leandroreign/crud/storage"
+)
 
 func main() {
-	fmt.Println("leandro")
+	driver := storage.Postgres
+	storage.New(driver)
+
 }
